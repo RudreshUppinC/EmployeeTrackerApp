@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DemoEmployeeVC" customModule="SwiftEmployees" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomHeight" destination="LSG-1x-HH8" id="s8l-Bd-66k"/>
+                <outlet property="bottomView" destination="a6v-dP-v9G" id="hMK-7V-kkR"/>
+                <outlet property="view" destination="098-Jc-Go6" id="mWd-Cg-C3T"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="098-Jc-Go6">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a6v-dP-v9G">
+                    <rect key="frame" x="0.0" y="552" width="393" height="300"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="LSG-1x-HH8"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1Bc-7K-Y7d">
+                    <rect key="frame" x="106.66666666666669" y="408.66666666666669" width="180" height="35"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkE-Rk-Pot">
+                            <rect key="frame" x="0.0" y="0.0" width="75" height="35"/>
+                            <color key="backgroundColor" red="0.38431372549999998" green="0.88235294119999996" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Down"/>
+                            <connections>
+                                <action selector="btnTappedHide:" destination="-1" eventType="touchUpInside" id="1eS-r5-JDf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5A-Zk-2Xr">
+                            <rect key="frame" x="105" y="0.0" width="75" height="35"/>
+                            <color key="backgroundColor" red="0.38431372549999998" green="0.88235294119999996" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="IDE-fz-ifm"/>
+                                <constraint firstAttribute="height" constant="35" id="T6V-Uu-Hri"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Up"/>
+                            <connections>
+                                <action selector="btnTappedUp:" destination="-1" eventType="touchUpInside" id="k1z-d7-UCT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a6v-dP-v9G" firstAttribute="leading" secondItem="098-Jc-Go6" secondAttribute="leading" id="ArC-kY-xFK"/>
+                <constraint firstAttribute="trailing" secondItem="a6v-dP-v9G" secondAttribute="trailing" id="Lkk-Qh-BmM"/>
+                <constraint firstAttribute="bottom" secondItem="a6v-dP-v9G" secondAttribute="bottom" id="N8o-Wq-HkH"/>
+                <constraint firstItem="1Bc-7K-Y7d" firstAttribute="centerX" secondItem="098-Jc-Go6" secondAttribute="centerX" id="VkG-VI-IeJ"/>
+                <constraint firstItem="1Bc-7K-Y7d" firstAttribute="centerY" secondItem="098-Jc-Go6" secondAttribute="centerY" id="qw7-Ax-H3O"/>
+            </constraints>
+            <point key="canvasLocation" x="325.95419847328242" y="-606.33802816901414"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
