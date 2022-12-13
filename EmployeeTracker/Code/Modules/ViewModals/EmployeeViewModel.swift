@@ -11,6 +11,7 @@ struct EmployeeViewModel {
     
     var employee = [Employee]()
     
+    
     mutating func loadEmployeeData() {
         employee.append(Employee(empName: "Mr. Faraz Rahman",
                                  empImage: "Person1",
