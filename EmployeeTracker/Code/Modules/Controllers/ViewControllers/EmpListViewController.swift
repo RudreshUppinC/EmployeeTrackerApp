@@ -124,13 +124,13 @@ extension EmpListViewController : UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let deleteAction = UIContextualAction(style: .normal, title: "Delete") { (action, view, completion) in
+        let deleteAction = UIContextualAction(style: .normal, title: "") { (action, view, completion) in
             // Perform your action here
             completion(true)
         }
         
-        deleteAction.image = UIImage(named: "Delete")
-        deleteAction.backgroundColor = UIColor.white
+        deleteAction.image = UIImage(named: "")
+        deleteAction.backgroundColor = UIColor.clear
         return UISwipeActionsConfiguration(actions: [deleteAction])
         
     }
