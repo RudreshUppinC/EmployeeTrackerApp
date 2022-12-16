@@ -14,7 +14,7 @@ public final class RCTabbar: UITabBar {
     
     // MARK:- Variables -
     @objc public var centerButtonActionHandler: ()-> () = {}
-
+    
     @IBInspectable public var centerButtonColor: UIColor = MyColor.ActiveStatus.value
     @IBInspectable public var centerButtonHeight: CGFloat = 50.0
     @IBInspectable public var padding: CGFloat = 8.0
@@ -23,7 +23,7 @@ public final class RCTabbar: UITabBar {
     
     @IBInspectable public var tabbarColor: UIColor = UIColor.white
     @IBInspectable public var unselectedItemColor: UIColor = UIColor.gray
-
+    
     private var shapeLayer: CALayer?
     
     private func addShape() {
@@ -53,7 +53,7 @@ public final class RCTabbar: UITabBar {
     override public func draw(_ rect: CGRect) {
         self.addShape()
     }
-        
+    
     override public func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         guard !clipsToBounds && !isHidden && alpha > 0 else { return nil }
         for member in subviews.reversed() {
@@ -97,14 +97,14 @@ public final class RCTabbar: UITabBar {
         centerButton.setImage(buttonImage, for: .normal)
         centerButton.backgroundColor = centerButtonColor
         centerButton.tintColor = UIColor.white
-
+        
         //add to the tabbar and add click event
         self.addSubview(centerButton)
         centerButton.addTarget(self, action: #selector(self.centerButtonAction), for: .touchUpInside)
     }
     
     // Menu Button Touch Action
-     @objc func centerButtonAction(sender: UIButton) {
+    @objc func centerButtonAction(sender: UIButton) {
         self.centerButtonActionHandler()
-     }
+    }
 }

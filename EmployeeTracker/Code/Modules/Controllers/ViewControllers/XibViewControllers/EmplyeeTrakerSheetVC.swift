@@ -8,7 +8,7 @@
 import UIKit
 import FittedSheets
 
-class EmplyeeStatusTrakerVC: UIViewController {
+class EmplyeeTrakerSheetVC: UIViewController {
     // --------------MARK: - Public Variables ---------------
     
     var viewModel = EmployeeViewModel()
@@ -47,7 +47,7 @@ class EmplyeeStatusTrakerVC: UIViewController {
     
 }
 
-extension EmplyeeStatusTrakerVC:  UICollectionViewDelegate, UICollectionViewDataSource {
+extension EmplyeeTrakerSheetVC:  UICollectionViewDelegate, UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -76,7 +76,7 @@ extension EmplyeeStatusTrakerVC:  UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let empDetailVC = storyboard.instantiateViewController(withIdentifier: "EmpTrackDetailsVC") as? EmpTrackDetailsVC else { fatalError("Unable to instance")  }
+        guard let empDetailVC = storyboard.instantiateViewController(withIdentifier: "EmpTrackerDetailsVC") as? EmpTrackerDetailsVC else { fatalError("Unable to instance")  }
         empDetailVC.empName =  viewModel.employee[indexPath.row].empName
         self.navigationController?.pushViewController(empDetailVC, animated: true)
         

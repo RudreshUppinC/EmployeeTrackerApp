@@ -49,7 +49,7 @@ struct EmployeeViewModel {
                                  empId: 1131015022,
                                  empNumber: 01670431261,
                                  empStatus: true))
-      
+        
         employee.append(Employee(empName: "Mr. Faraz Rahman",
                                  empImage: "Person1",
                                  empActive: "Active",

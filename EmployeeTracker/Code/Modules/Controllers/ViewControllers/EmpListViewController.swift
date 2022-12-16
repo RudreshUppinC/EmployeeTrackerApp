@@ -44,8 +44,7 @@ class EmpListViewController: UIViewController {
         
     }
     
-    
-    // MARK: - Private Functions
+    // --------------MARK: - Private Functions---------------
     
     private func registorCells() {
         tableView.dataSource = self
@@ -53,7 +52,6 @@ class EmpListViewController: UIViewController {
         tableView.register(UINib(nibName: EmployeeTableViewCell.identifier, bundle: nil),
                            forCellReuseIdentifier: EmployeeTableViewCell.identifier)
         viewModel.loadEmployeeData()
-        
         
         filteredList = viewModel.employee
     }
@@ -68,7 +66,6 @@ class EmpListViewController: UIViewController {
         loaderView.center = view.center
         self.view.addSubview(loaderView)
         
-        
     }
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
@@ -79,11 +76,12 @@ class EmpListViewController: UIViewController {
         
     }
     
-    
 }
 
+// --------------MARK: - EmpListViewController SearchBarDelegate---------------
+
 extension EmpListViewController : UISearchBarDelegate {
-    func filterContentForSearchText(searchText: String, scope: String = "All") {
+    func filterContentForSearchText(searchText: String) {
         filteredList  = searchText.isEmpty ? viewModel.employee : viewModel.employee.filter { name in return  name.empName.lowercased().contains(searchText.lowercased())
         }
         
@@ -98,8 +96,7 @@ extension EmpListViewController : UISearchBarDelegate {
     
 }
 
-
-// MARK: - Extension ViewController
+// --------------MARK: - Extension ViewController --------------
 
 extension EmpListViewController : UITableViewDelegate,UITableViewDataSource {
     
@@ -142,44 +139,7 @@ extension EmpListViewController : UITableViewDelegate,UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
         
-    }
-    
-    
+    }    
     
 }
-
-
-
-
-
-extension UIView{
-    
-    func activityStartAnimating() {
-        
-        let backgroundView = UIView()
-        backgroundView.frame = CGRect.init(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height)
-        backgroundView.backgroundColor = backgroundColor
-        backgroundView.tag = 475647
-        
-        
-        var activityIndicator = NVActivityIndicatorView(frame: CGRect(
-            x: 0,
-            y: 0,
-            width: 40,
-            height: 40),type: .circleStrokeSpin, color: UIColor.red)
-        activityIndicator.startAnimating()
-        
-        // backgroundView.addSubview(activityIndicator)
-        
-        self.addSubview(activityIndicator)
-    }
-    
-    func activityStopAnimating() {
-        if let background = viewWithTag(475647){
-            background.removeFromSuperview()
-        }
-        self.isUserInteractionEnabled = true
-    }
-}
-
 

@@ -94,85 +94,26 @@
             </objects>
             <point key="canvasLocation" x="5768.7022900763359" y="179.57746478873241"/>
         </scene>
-        <!--EmpTrackDetailsVC-->
+        <!--EmpTrackerDetailsVC-->
         <scene sceneID="Dhg-AN-5Fc">
             <objects>
-                <viewController restorationIdentifier="EmpTrackDetailsVC" storyboardIdentifier="EmpTrackDetailsVC" title="EmpTrackDetailsVC" modalPresentationStyle="fullScreen" id="3XD-GA-9rY" customClass="EmpTrackDetailsVC" customModule="EmployeeTraker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="EmpTrackerDetailsVC" storyboardIdentifier="EmpTrackerDetailsVC" title="EmpTrackerDetailsVC" modalPresentationStyle="fullScreen" id="3XD-GA-9rY" customClass="EmpTrackerDetailsVC" customModule="EmployeeTraker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cQu-CM-c3s">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJP-TK-sri">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="378"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQc-MO-Qst">
-                                <rect key="frame" x="0.0" y="289" width="320" height="279"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bd1-8w-zAh">
-                                        <rect key="frame" x="0.0" y="29" width="320" height="49"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapImageDetail" translatesAutoresizingMaskIntoConstraints="NO" id="H01-sv-IOv">
-                                                <rect key="frame" x="24" y="0.0" width="20" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="FEv-RL-zB1"/>
-                                                    <constraint firstAttribute="width" constant="20" id="da2-bS-63q"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timeline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfm-8C-8wb">
-                                                <rect key="frame" x="60" y="0.0" width="59" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="ksE-MF-upb"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="H01-sv-IOv" firstAttribute="leading" secondItem="Bd1-8w-zAh" secondAttribute="leading" constant="24" id="2b1-Jd-zlN"/>
-                                            <constraint firstAttribute="height" constant="49" id="580-b9-gGn"/>
-                                            <constraint firstItem="pfm-8C-8wb" firstAttribute="leading" secondItem="H01-sv-IOv" secondAttribute="trailing" constant="16" id="8P9-TH-Gr4"/>
-                                            <constraint firstItem="pfm-8C-8wb" firstAttribute="centerY" secondItem="H01-sv-IOv" secondAttribute="centerY" id="9bx-bq-pmR"/>
-                                            <constraint firstItem="H01-sv-IOv" firstAttribute="top" secondItem="Bd1-8w-zAh" secondAttribute="top" id="Euu-pZ-xYt"/>
-                                            <constraint firstItem="pfm-8C-8wb" firstAttribute="top" secondItem="H01-sv-IOv" secondAttribute="top" id="rcF-bm-7Q4"/>
-                                        </constraints>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jt4-1v-GgJ">
-                                        <rect key="frame" x="122.5" y="219.5" width="75" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="new-8Y-39H"/>
-                                            <constraint firstAttribute="width" constant="75" id="rEW-uQ-Jo0"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Button"/>
-                                        <connections>
-                                            <action selector="buttonTapAction:" destination="3XD-GA-9rY" eventType="touchUpInside" id="JEn-ig-nnr"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="jt4-1v-GgJ" firstAttribute="centerX" secondItem="HQc-MO-Qst" secondAttribute="centerX" id="HIV-Wz-Imz"/>
-                                    <constraint firstItem="jt4-1v-GgJ" firstAttribute="centerY" secondItem="HQc-MO-Qst" secondAttribute="centerY" multiplier="1.7" id="Jih-en-Hx9"/>
-                                    <constraint firstAttribute="height" constant="279" id="dLx-9n-oap"/>
-                                    <constraint firstItem="Bd1-8w-zAh" firstAttribute="top" secondItem="HQc-MO-Qst" secondAttribute="top" constant="29" id="nff-8m-Zas"/>
-                                    <constraint firstItem="Bd1-8w-zAh" firstAttribute="leading" secondItem="HQc-MO-Qst" secondAttribute="leading" id="u2F-h4-zgu"/>
-                                    <constraint firstAttribute="trailing" secondItem="Bd1-8w-zAh" secondAttribute="trailing" id="va6-nr-zDj"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TV7-pl-Ok2"/>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SJP-TK-sri" firstAttribute="leading" secondItem="TV7-pl-Ok2" secondAttribute="leading" id="3Df-hm-U6U"/>
-                            <constraint firstItem="TV7-pl-Ok2" firstAttribute="trailing" secondItem="HQc-MO-Qst" secondAttribute="trailing" id="V7o-Rx-o5b"/>
-                            <constraint firstItem="HQc-MO-Qst" firstAttribute="leading" secondItem="TV7-pl-Ok2" secondAttribute="leading" id="bGP-NE-3yg"/>
                             <constraint firstItem="SJP-TK-sri" firstAttribute="top" secondItem="TV7-pl-Ok2" secondAttribute="top" id="msh-22-Nn9"/>
                             <constraint firstItem="TV7-pl-Ok2" firstAttribute="trailing" secondItem="SJP-TK-sri" secondAttribute="trailing" id="oEg-tb-X5U"/>
-                            <constraint firstItem="TV7-pl-Ok2" firstAttribute="bottom" secondItem="SJP-TK-sri" secondAttribute="bottom" constant="190" id="scd-gb-g2p"/>
-                            <constraint firstItem="TV7-pl-Ok2" firstAttribute="bottom" secondItem="HQc-MO-Qst" secondAttribute="bottom" id="t2r-Uz-ROS"/>
+                            <constraint firstItem="TV7-pl-Ok2" firstAttribute="bottom" secondItem="SJP-TK-sri" secondAttribute="bottom" id="scd-gb-g2p"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="1Kr-XQ-wvJ">
@@ -184,9 +125,6 @@
                             <barButtonItem title="Item" image="phoneImage" id="hc8-i3-tfj"/>
                         </rightBarButtonItems>
                     </navigationItem>
-                    <connections>
-                        <outlet property="bottomView" destination="HQc-MO-Qst" id="5uO-Ld-MHu"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yqe-Wp-krF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -246,7 +184,7 @@
                     <tabBarItem key="tabBarItem" title="Traker" image="pathUnselected" selectedImage="pathSelected" id="mrW-AE-nDF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="backBtn" backIndicatorTransitionMaskImage="backBtn" id="RnP-Vw-o41">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.38431372549019605" green="0.88235294117647056" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -275,7 +213,6 @@
         <image name="chatImage" width="24" height="24"/>
         <image name="empSelected" width="40" height="24"/>
         <image name="empUnslected" width="40" height="24"/>
-        <image name="mapImageDetail" width="35" height="32"/>
         <image name="pathSelected" width="20" height="28"/>
         <image name="pathUnselected" width="20" height="28"/>
         <image name="phoneImage" width="24" height="21"/>

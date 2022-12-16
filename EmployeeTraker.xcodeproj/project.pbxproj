@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		752092622945DE8F00AF4662 /* EmplyeeStatusTrakerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752092602945DE8F00AF4662 /* EmplyeeStatusTrakerVC.swift */; };
-		752092632945DE8F00AF4662 /* EmplyeeStatusTrakerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 752092612945DE8F00AF4662 /* EmplyeeStatusTrakerVC.xib */; };
+		752092622945DE8F00AF4662 /* EmplyeeTrakerSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752092602945DE8F00AF4662 /* EmplyeeTrakerSheetVC.swift */; };
+		752092632945DE8F00AF4662 /* EmplyeeTrakerSheetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 752092612945DE8F00AF4662 /* EmplyeeTrakerSheetVC.xib */; };
 		754C79D72913BC81006306AB /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C79D62913BC81006306AB /* Employee.swift */; };
 		754C79D92913BCE8006306AB /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C79D82913BCE8006306AB /* EmployeeViewModel.swift */; };
 		754C79DC2913D645006306AB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C79DB2913D645006306AB /* Color.swift */; };
@@ -23,9 +23,12 @@
 		757001172912CB70002525F2 /* SwiftNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757001162912CB70002525F2 /* SwiftNewsUITestsLaunchTests.swift */; };
 		7582837D29139C100090FC5D /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582837B29139C100090FC5D /* EmployeeTableViewCell.swift */; };
 		7582837E29139C100090FC5D /* EmployeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7582837C29139C100090FC5D /* EmployeeTableViewCell.xib */; };
-		7583CAA72914057000C667AA /* EmpTrackDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7583CAA62914057000C667AA /* EmpTrackDetailsVC.swift */; };
+		7583CAA72914057000C667AA /* EmpTrackerDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7583CAA62914057000C667AA /* EmpTrackerDetailsVC.swift */; };
 		7583CAA92914176100C667AA /* RCTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7583CAA82914176100C667AA /* RCTabbar.swift */; };
 		75858833294CB6E200B75047 /* EMPConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75858832294CB6E200B75047 /* EMPConstants.swift */; };
+		75858835294CD7FD00B75047 /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75858834294CD7FD00B75047 /* CustomLoader.swift */; };
+		75858838294CD90600B75047 /* EmpTrackerDetailSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75858836294CD90500B75047 /* EmpTrackerDetailSheetVC.swift */; };
+		75858839294CD90600B75047 /* EmpTrackerDetailSheetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75858837294CD90600B75047 /* EmpTrackerDetailSheetVC.xib */; };
 		7585CA8C2913E944006102A3 /* EmpTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7585CA8B2913E944006102A3 /* EmpTrackerViewController.swift */; };
 		7589132F2938CCBA00261912 /* DemoEmployeeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7589132E2938CCBA00261912 /* DemoEmployeeVC.xib */; };
 		758913312938CCD400261912 /* DemoEmployeeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758913302938CCD400261912 /* DemoEmployeeVC.swift */; };
@@ -55,8 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		752092602945DE8F00AF4662 /* EmplyeeStatusTrakerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmplyeeStatusTrakerVC.swift; sourceTree = "<group>"; };
-		752092612945DE8F00AF4662 /* EmplyeeStatusTrakerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmplyeeStatusTrakerVC.xib; sourceTree = "<group>"; };
+		752092602945DE8F00AF4662 /* EmplyeeTrakerSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmplyeeTrakerSheetVC.swift; sourceTree = "<group>"; };
+		752092612945DE8F00AF4662 /* EmplyeeTrakerSheetVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmplyeeTrakerSheetVC.xib; sourceTree = "<group>"; };
 		754C79D62913BC81006306AB /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		754C79D82913BCE8006306AB /* EmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
 		754C79DB2913D645006306AB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -75,9 +78,12 @@
 		757001162912CB70002525F2 /* SwiftNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7582837B29139C100090FC5D /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
 		7582837C29139C100090FC5D /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableViewCell.xib; sourceTree = "<group>"; };
-		7583CAA62914057000C667AA /* EmpTrackDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpTrackDetailsVC.swift; sourceTree = "<group>"; };
+		7583CAA62914057000C667AA /* EmpTrackerDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpTrackerDetailsVC.swift; sourceTree = "<group>"; };
 		7583CAA82914176100C667AA /* RCTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTabbar.swift; sourceTree = "<group>"; };
 		75858832294CB6E200B75047 /* EMPConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMPConstants.swift; sourceTree = "<group>"; };
+		75858834294CD7FD00B75047 /* CustomLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoader.swift; sourceTree = "<group>"; };
+		75858836294CD90500B75047 /* EmpTrackerDetailSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpTrackerDetailSheetVC.swift; sourceTree = "<group>"; };
+		75858837294CD90600B75047 /* EmpTrackerDetailSheetVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmpTrackerDetailSheetVC.xib; sourceTree = "<group>"; };
 		7585CA8B2913E944006102A3 /* EmpTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpTrackerViewController.swift; sourceTree = "<group>"; };
 		7589132E2938CCBA00261912 /* DemoEmployeeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoEmployeeVC.xib; sourceTree = "<group>"; };
 		758913302938CCD400261912 /* DemoEmployeeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoEmployeeVC.swift; sourceTree = "<group>"; };
@@ -249,8 +255,10 @@
 			children = (
 				758913302938CCD400261912 /* DemoEmployeeVC.swift */,
 				7589132E2938CCBA00261912 /* DemoEmployeeVC.xib */,
-				752092602945DE8F00AF4662 /* EmplyeeStatusTrakerVC.swift */,
-				752092612945DE8F00AF4662 /* EmplyeeStatusTrakerVC.xib */,
+				752092602945DE8F00AF4662 /* EmplyeeTrakerSheetVC.swift */,
+				752092612945DE8F00AF4662 /* EmplyeeTrakerSheetVC.xib */,
+				75858836294CD90500B75047 /* EmpTrackerDetailSheetVC.swift */,
+				75858837294CD90600B75047 /* EmpTrackerDetailSheetVC.xib */,
 			);
 			path = XibViewControllers;
 			sourceTree = "<group>";
@@ -261,7 +269,7 @@
 				7589132D2938CC8700261912 /* XibViewControllers */,
 				757000F72912CB6E002525F2 /* EmpListViewController.swift */,
 				7585CA8B2913E944006102A3 /* EmpTrackerViewController.swift */,
-				7583CAA62914057000C667AA /* EmpTrackDetailsVC.swift */,
+				7583CAA62914057000C667AA /* EmpTrackerDetailsVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -271,6 +279,7 @@
 			children = (
 				7597DBD32914DF0000D79667 /* UIView.swift */,
 				75858832294CB6E200B75047 /* EMPConstants.swift */,
+				75858834294CD7FD00B75047 /* CustomLoader.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -409,7 +418,8 @@
 				757001002912CB70002525F2 /* LaunchScreen.storyboard in Resources */,
 				7582837E29139C100090FC5D /* EmployeeTableViewCell.xib in Resources */,
 				7589132F2938CCBA00261912 /* DemoEmployeeVC.xib in Resources */,
-				752092632945DE8F00AF4662 /* EmplyeeStatusTrakerVC.xib in Resources */,
+				75858839294CD90600B75047 /* EmpTrackerDetailSheetVC.xib in Resources */,
+				752092632945DE8F00AF4662 /* EmplyeeTrakerSheetVC.xib in Resources */,
 				757000FD2912CB70002525F2 /* Assets.xcassets in Resources */,
 				757000FB2912CB6E002525F2 /* Main.storyboard in Resources */,
 				7597DBDA2914E58700D79667 /* EmpTrackerCollectionViewCell.xib in Resources */,
@@ -441,17 +451,19 @@
 				757000F82912CB6E002525F2 /* EmpListViewController.swift in Sources */,
 				754C79D72913BC81006306AB /* Employee.swift in Sources */,
 				754C79D92913BCE8006306AB /* EmployeeViewModel.swift in Sources */,
+				75858838294CD90600B75047 /* EmpTrackerDetailSheetVC.swift in Sources */,
 				7597DBD42914DF0000D79667 /* UIView.swift in Sources */,
 				7597DBD92914E58700D79667 /* EmpTrackerCollectionViewCell.swift in Sources */,
 				757000F42912CB6E002525F2 /* AppDelegate.swift in Sources */,
 				758913312938CCD400261912 /* DemoEmployeeVC.swift in Sources */,
 				7583CAA92914176100C667AA /* RCTabbar.swift in Sources */,
 				754C79DC2913D645006306AB /* Color.swift in Sources */,
-				7583CAA72914057000C667AA /* EmpTrackDetailsVC.swift in Sources */,
-				752092622945DE8F00AF4662 /* EmplyeeStatusTrakerVC.swift in Sources */,
+				7583CAA72914057000C667AA /* EmpTrackerDetailsVC.swift in Sources */,
+				752092622945DE8F00AF4662 /* EmplyeeTrakerSheetVC.swift in Sources */,
 				7582837D29139C100090FC5D /* EmployeeTableViewCell.swift in Sources */,
 				757000F62912CB6E002525F2 /* SceneDelegate.swift in Sources */,
 				75858833294CB6E200B75047 /* EMPConstants.swift in Sources */,
+				75858835294CD7FD00B75047 /* CustomLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
