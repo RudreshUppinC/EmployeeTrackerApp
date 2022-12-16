@@ -28,7 +28,7 @@ class EmpListViewController: UIViewController {
         super.viewDidLoad()
         registorCells()
         searchTextBar.delegate = self
-        searchTextBar.setImage(UIImage(named: "Search"), for: .search, state: .normal)
+        searchTextBar.setImage(UIImage(named: EMPConstants.ImageStrings.searchImage), for: .search, state: .normal)
         setupUiView()
         
     }
