@@ -68,7 +68,7 @@ class EmpListViewController: UIViewController {
         loaderView.center = view.center
         self.view.addSubview(loaderView)
         
-   
+        
     }
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
@@ -84,23 +84,8 @@ class EmpListViewController: UIViewController {
 
 extension EmpListViewController : UISearchBarDelegate {
     func filterContentForSearchText(searchText: String, scope: String = "All") {
-        // if searchText != "" {
-        
-        filteredList  = viewModel.employee.filter { name in
-            return  name.empName.lowercased().contains(searchText.lowercased())
+        filteredList  = searchText.isEmpty ? viewModel.employee : viewModel.employee.filter { name in return  name.empName.lowercased().contains(searchText.lowercased())
         }
-        
-        //        if filteredList.isEmpty {
-        loaderView.activityStartAnimating()
-        //        }
-        
-        
-        filteredList = []
-        
-        if filteredList.isEmpty {
-            loaderView.activityStopAnimating()
-        }
-        
         
         tableView.reloadData()
         

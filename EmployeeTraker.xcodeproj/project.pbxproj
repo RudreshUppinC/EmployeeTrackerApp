@@ -25,6 +25,7 @@
 		7582837E29139C100090FC5D /* EmployeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7582837C29139C100090FC5D /* EmployeeTableViewCell.xib */; };
 		7583CAA72914057000C667AA /* EmpTrackDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7583CAA62914057000C667AA /* EmpTrackDetailsVC.swift */; };
 		7583CAA92914176100C667AA /* RCTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7583CAA82914176100C667AA /* RCTabbar.swift */; };
+		75858833294CB6E200B75047 /* EMPConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75858832294CB6E200B75047 /* EMPConstants.swift */; };
 		7585CA8C2913E944006102A3 /* EmpTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7585CA8B2913E944006102A3 /* EmpTrackerViewController.swift */; };
 		7589132F2938CCBA00261912 /* DemoEmployeeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7589132E2938CCBA00261912 /* DemoEmployeeVC.xib */; };
 		758913312938CCD400261912 /* DemoEmployeeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758913302938CCD400261912 /* DemoEmployeeVC.swift */; };
@@ -76,6 +77,7 @@
 		7582837C29139C100090FC5D /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableViewCell.xib; sourceTree = "<group>"; };
 		7583CAA62914057000C667AA /* EmpTrackDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpTrackDetailsVC.swift; sourceTree = "<group>"; };
 		7583CAA82914176100C667AA /* RCTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTabbar.swift; sourceTree = "<group>"; };
+		75858832294CB6E200B75047 /* EMPConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMPConstants.swift; sourceTree = "<group>"; };
 		7585CA8B2913E944006102A3 /* EmpTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpTrackerViewController.swift; sourceTree = "<group>"; };
 		7589132E2938CCBA00261912 /* DemoEmployeeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoEmployeeVC.xib; sourceTree = "<group>"; };
 		758913302938CCD400261912 /* DemoEmployeeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoEmployeeVC.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				7597DBD32914DF0000D79667 /* UIView.swift */,
+				75858832294CB6E200B75047 /* EMPConstants.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				752092622945DE8F00AF4662 /* EmplyeeStatusTrakerVC.swift in Sources */,
 				7582837D29139C100090FC5D /* EmployeeTableViewCell.swift in Sources */,
 				757000F62912CB6E002525F2 /* SceneDelegate.swift in Sources */,
+				75858833294CB6E200B75047 /* EMPConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
