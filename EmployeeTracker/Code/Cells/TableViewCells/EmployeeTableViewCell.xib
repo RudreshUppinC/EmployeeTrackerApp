@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmployeeTableViewCell" rowHeight="113" id="KGk-i7-Jjw" customClass="EmployeeTableViewCell" customModule="SwiftEmployees" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmployeeTableViewCell" rowHeight="113" id="KGk-i7-Jjw" customClass="EmployeeTableViewCell" customModule="EmployeeTraker" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="524" height="135"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -107,6 +107,8 @@
                 <outlet property="empNumberlbl" destination="1nK-hg-gOw" id="UgG-Lo-khi"/>
                 <outlet property="empStatuslbl" destination="9Ug-V4-KrN" id="ZH6-ok-caj"/>
                 <outlet property="mainContentView" destination="iRk-jt-3sC" id="fNF-oh-knh"/>
+                <outlet property="trackImage" destination="6tY-xB-h8I" id="m9L-pl-evX"/>
+                <outlet property="trackLabel" destination="M4K-SA-2eV" id="fAK-u1-hHC"/>
             </connections>
             <point key="canvasLocation" x="203.0534351145038" y="117.95774647887325"/>
         </tableViewCell>

@@ -16,6 +16,8 @@ class EmployeeTableViewCell: UITableViewCell {
     @IBOutlet weak var empStatuslbl: UILabel!
     @IBOutlet weak var empImage: UIImageView!
     
+    @IBOutlet weak var trackLabel: UILabel!
+    @IBOutlet weak var trackImage: UIImageView!
     static let identifier = String(describing: EmployeeTableViewCell.self)
 
     override func awakeFromNib() {
