@@ -42,7 +42,6 @@ class EmpListViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         // MARK: - to check the loader put here
         filteredList =  []
-        self.tableView.reloadData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -71,11 +70,11 @@ class EmpListViewController: UIViewController {
         tableView.delegate = self
         tableView.register(UINib(nibName: EmployeeTableViewCell.identifier, bundle: nil),
                            forCellReuseIdentifier: EmployeeTableViewCell.identifier)
-   
+        viewModel.loadEmployeeData()
+
     }
     
     private func loadEmpData() {
-        viewModel.loadEmployeeData()
         CustomLoader.loading(self.loaderView, enable: true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
             CustomLoader.dismiss(self.loaderView)
@@ -139,12 +138,6 @@ extension EmpListViewController : UITableViewDelegate,UITableViewDataSource {
         
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete{
-            self.tableView.reloadData()
-        }
-        
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredList.count
